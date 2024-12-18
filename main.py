@@ -17,6 +17,7 @@ def get_book_text(path):
 def number_of_words(text):
     words = text.split()   
     return len(words)
+#counts how many letters and returns a dictionary {letter: count}
 def num_each_character(text):
       my_string = text
       lowered_string = text.lower()
@@ -28,8 +29,10 @@ def num_each_character(text):
                   else:
                         my_dic[letter] = 1
       return my_dic
+#sort variable
 def sort_by_occurrence(item):
       return item["num"]
+#print function that doesn't need to be its own function
 def book_report(list):
       for entry in list:
             print(f"The '{entry["char"]}' character was found {entry["num"]} times")
