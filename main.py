@@ -19,10 +19,9 @@ def number_of_words(text):
     return len(words)
 #counts how many letters and returns a dictionary {letter: count}
 def num_each_character(text):
-      my_string = text
-      lowered_string = text.lower()
       my_dic = {}
-      for letter in lowered_string:
+      for letter in text:
+            letter = letter.lower()
             if letter.isalpha():
                   if letter in my_dic:
                         my_dic[letter] += 1
